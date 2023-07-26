@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# StopperShop Dashboard
 
-## Getting Started
+A project to learn modern full-stack web development.
 
-First, run the development server:
+### An Admin Dashboard & CMS for any E-Commerce Front
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+**Visit [StopperShop Dashboard](https://stoppershop-dashboard.vercel.app) to start creating your own store.**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Visit [StopperShop](https://stoppershop-store.vercel.app) to see the store I created.**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+-   An overview for each store that shows total revenue, sales, and stock available, along with a chart to visualize the revenue earned in each month of the year.
+-   An easy-to-use CMS that allows users to manage (i.e. create, update or delete) store products, categories, billboards, sizes, and colors.
+-   An orders page that automatically captures data from the store and shows the products ordered, the customer’s phone number and address, and whether the payment was successful or not.
+-   Integration with Cloudinary allows users to upload images for their products and billboards. This feature makes it easy for users to showcase their products and provide customers with high-quality images.
+-   Integration with Clerk provides secure authentication for the dashboard, ensuring that only authorized users can access the admin features.
+-   The standout feature of this dashboard is, it exposes custom API endpoints for all the content created (stores, products, categories, billboards, sizes, and colors).
 
-## Learn More
+### Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+-   **Language:** TypeScript & JSX
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   **Frameworks & libraries:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    -   NextJS with Tailwind CSS,
+    -   Shadcn UI (component library),
+    -   Zustand (for state management),
+    -   Stripe (secure payment gateway),
+    -   Cloudinary (cloud based CDN), and
+    -   Clerk (3rd party authentication provider).
 
-## Deploy on Vercel
+-   **Database:** PlanetScale (serverless MySQL platform)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   **ORM:** Prisma
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Acknowledgements
+
+-   The branding _StopperShop_ is just for styling purposes, I hold no affiliation or rights under this name. I’m simply too lazy to think of a more creative name, rather than ripping off a popular Indian franchise.
+-   This project was made by following the brilliant tutorial by [Code With Antonio](https://www.youtube.com/watch?v=5miHyP6lExg).
+-   This project is not completely optimized for mobile responsiveness.
